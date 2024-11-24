@@ -4,10 +4,9 @@ import palete_list from "../public/data/palete_list.json"
 import ColorPaleteCard from "./components/ColorPaleteCard.vue";
 import Header from "@/components/Header.vue";
 import {Vue3ColorPicker} from '@cyhnkckali/vue3-color-picker';
-import {ref} from "vue";
 import {onMounted, ref, watch} from "vue";
 
-const paleteList = palete_list
+const paleteList = palete_list;
 
 const notionAPI = axios.create({
   baseURL: '/api/v1/',  // Это будет правильно проксироваться на https://api.notion.com/v1/
