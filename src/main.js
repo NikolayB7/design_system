@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import './assets/main.css'
+import './assets/custom-libs.css'
 import '@cyhnkckali/vue3-color-picker/dist/style.css'
 import App from './App.vue'
 

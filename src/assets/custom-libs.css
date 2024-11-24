@@ -1,0 +1,4 @@
+/*Change Color Picker width */
+.ck-cp-container{
+    width: auto !important;
+}
