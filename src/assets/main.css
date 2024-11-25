@@ -16,13 +16,14 @@
     }
     .card{
         @apply
+        bg-white
         overflow-hidden
         border
         border-transparent
         rounded-md
         shadow-[rgba(0,0,0,0.16)_0px_3px_6px,rgba(0,0,0,0.23)_0px_3px_6px]
-        /*transition-all*/
-        /*duration-300*/
+            /*transition-all*/
+            /*duration-300*/
         hover:border-slate-300;
     }
     .card.active{

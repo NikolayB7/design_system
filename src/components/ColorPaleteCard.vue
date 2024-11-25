@@ -1,6 +1,8 @@
 <script setup>
 
 defineProps({
+  id:Number,
+  focusPallete:String,
   list:Array,
   onFocus:Function
 })
@@ -19,7 +21,7 @@ defineProps({
               backgroundColor: color,
               transform: `translateY(${index * 40}px)`
            }">
-<!--            <input type="text" @focus="()=>onFocus(color)" v-model=`${color}` maxlength="7" class="invert-75 bg-transparent focus:outline-0">-->
+            <input type="text" @focus="onFocus(color,id)" :value="color" maxlength="7" class="invert-75 bg-transparent focus:outline-0">
 
         </div>
       </div>
