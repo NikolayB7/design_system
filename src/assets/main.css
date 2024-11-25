@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .picker-style{
+        @apply
+        w-0
+        overflow-hidden
+        absolute
+        z-20
+        top-3
+        bottom-0
+        right-1
+        translate-x-full
+    }
+    .card{
+        @apply
+        overflow-hidden
+        border
+        border-transparent
+        rounded-md
+        shadow-[rgba(0,0,0,0.16)_0px_3px_6px,rgba(0,0,0,0.23)_0px_3px_6px]
+        /*transition-all*/
+        /*duration-300*/
+        hover:border-slate-300;
+    }
+    .card.active{
+        @apply
+        pr-100%
+        -mr-100%
+    }
+    .card.active .picker-style{
+        @apply
+        w-auto
+    }
+
+}

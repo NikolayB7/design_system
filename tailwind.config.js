@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        '100%': '100%',
+      },
       invert: {
         25: '.25',
         50: '.5',

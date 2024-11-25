@@ -1,4 +1,7 @@
 /*Change Color Picker width */
 .ck-cp-container{
     width: auto !important;
+    height: 100% !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
 }
