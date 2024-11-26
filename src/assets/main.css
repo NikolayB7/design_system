@@ -35,5 +35,19 @@
         @apply
         w-auto
     }
+    .card.last-in-row.active{
+        @apply
+        pr-0
+        -mr-0
+        pl-100%
+        -ml-100%
+    }
+    .card.last-in-row .picker-style{
+        @apply
+        right-auto
+        left-1
+        -translate-x-full
+
+    }
 
 }
