@@ -38,6 +38,11 @@ const copySelectColor = (val) => {
         console.error('Ошибка при копировании:', err);
       });
 };
+
+const toLower = (val) =>{
+  return val.toLowerCase()
+}
+
 watch(
     () => props.focusPallete,
     (newColor) => {
@@ -62,7 +67,7 @@ watch(
               transform: `translateY(${index * 40}px)`
            }">
           <div class="flex relative">
-            <input type="text" @focus="()=>{onFocus(color,id),getFocusId(index)}" :value="color" maxlength="7" class="invert-75 bg-transparent focus:outline-0">
+            <input type="text" @focus="()=>{onFocus(color,id),getFocusId(index)}" :value="toLower(color)" maxlength="7" class="invert-75 bg-transparent focus:outline-0">
             <button
                 class="absolute top-0 right-0"
                 @click="copySelectColor(color)">

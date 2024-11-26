@@ -43,7 +43,7 @@ onMounted(async () => {
     <Header></Header>
     <div class="flex flex-wrap mt-3 -m-3">
       <div
-          class="basis-1/4 p-3"
+          class="2xl:basis-1/5 xl:basis-1/4 lg:basis-1/3 basis-1/2 basis p-3"
           v-for="(item,index) in paleteList"
           :key="index"
       >
